@@ -40,7 +40,7 @@
     "url": "https://github.com/shashankmc/vue-legal-case-builder/issues"
   },
   "dependencies": {
-    "legal-provision-types": "github:shashankmc/legal-provision-types#1388a4c",
+    "legal-provision-types": "git+https://github.com/shashankmc/legal-provision-types.git#1388a4c",
     "lucide-vue-next": "^1.0.0"
   },
   "peerDependencies": {
