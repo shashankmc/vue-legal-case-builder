@@ -1,0 +1,58 @@
+{
+  "name": "vue-legal-case-builder",
+  "version": "0.1.0",
+  "description": "BlueLab case builder: pick a prepared scenario or write a custom case (fact pattern plus structured facts). Emits case@1 and never calls an API.",
+  "type": "module",
+  "main": "./dist/vue-legal-case-builder.umd.cjs",
+  "module": "./dist/vue-legal-case-builder.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/vue-legal-case-builder.js",
+      "require": "./dist/vue-legal-case-builder.umd.cjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./style.css": "./dist/vue-legal-case-builder.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build && node scripts/copy-types.mjs",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "vue",
+    "vue3",
+    "legal",
+    "case",
+    "bluelab"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shashankmc/vue-legal-case-builder.git"
+  },
+  "homepage": "https://github.com/shashankmc/vue-legal-case-builder#readme",
+  "bugs": {
+    "url": "https://github.com/shashankmc/vue-legal-case-builder/issues"
+  },
+  "dependencies": {
+    "legal-provision-types": "github:shashankmc/legal-provision-types#1388a4c",
+    "lucide-vue-next": "^1.0.0"
+  },
+  "peerDependencies": {
+    "vue": "^3.4.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.0",
+    "@vue/test-utils": "^2.4.6",
+    "happy-dom": "^15.0.0",
+    "typescript": "^5.3.0",
+    "vite": "^5.4.0",
+    "vitest": "^2.1.0",
+    "vue": "^3.4.0"
+  }
+}
