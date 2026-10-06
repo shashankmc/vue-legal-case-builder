@@ -12,7 +12,7 @@
       "require": "./dist/vue-legal-case-builder.umd.cjs",
       "types": "./dist/index.d.ts"
     },
-    "./style.css": "./dist/vue-legal-case-builder.css"
+    "./style.css": "./dist/style.css"
   },
   "files": [
     "dist"
